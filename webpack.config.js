@@ -26,7 +26,7 @@ module.exports = {
     rules: [
       { test: /\.scss$/, use: ["style-loader", "css-loader", "sass-loader"] },
       {test:/\.js$/, exclude: /node_modules/, use:{loader:"babel-loader", options:{presets:["@babel/preset-env"]}}},
-      {test:/\(.png|.jpg|.svg|.jpeg|.gif$/, type:"asset/resource", use:"file-loader"},
+      {test:/\(.png|.jpg|.svg|.jpeg|.gif$/, type:"asset/resource"},
     ],
   },
   plugins:[

@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-$primary-color: #2fa8cc;
+$primary-color: #2734ad;
 $secondary-color: #f4f4f4;
-$box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+$box-shadow: 0 10px 20px rgba(0, 0, 0, 0.336), 0 6px 6px rgba(0, 0, 0, 0.1);
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  background-color: $primary-color;
+  background:url("../assets/bg.jpg") no-repeat  fixed;
   font-family: 'Roboto', sans-serif;
   display: flex;
   flex-direction: column;
@@ -22,7 +22,11 @@ body {
 }
 
 .container {
-  background-color: $secondary-color;
+  backdrop-filter: blur(25px) saturate(200%);
+  -webkit-backdrop-filter: blur(25px) saturate(200%);
+  background-color: rgba(141, 147, 158, 0.77);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
   border-radius: 10px;
   box-shadow: $box-shadow;
   padding: 50px 20px;
